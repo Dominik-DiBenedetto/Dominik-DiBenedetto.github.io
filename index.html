@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <div class="nav-bar">
+        <a href="#" class="fadeIn nav-link about-link">About</a>
+        <a href="#projects" class="fadeIn nav-link proj-link">Projects</a>
+        <a href="#contact" class="fadeIn nav-link contact-link">Contact</a>
+    </div>
+    <img src="images/D Logo.png" class="logo">
+    <div class="content">
+        <div class="about-me fadeIn">
+            <span class="greeting" id="about-me">Hi, Im Dominik DiBenedetto</span>
+            <h1>"I create a purpose for the web"</h1>
+            <span class="desc">I'm a 12 year old Full-stack Developer</span>
+            <br>
+            <span class="learn-more" onclick="drop()">
+                Learn More<ion-icon name="chevron-forward-outline" class="dropdown"></ion-icon>
+            </span>
+            <div class="more hidden fly-on">
+                Just your average 12 year old, with a huge passion for programming.
+                <br>
+                <span class="bold">How Did I Get Into Programming?</span>
+                <br>
+                As you are aware there was a Pandemic that hit the world.
+                <br>
+                During this time of everything being closed, I started
+                <br>
+                trying to make games for Roblox using Luau 
+                <br>(The varient of lua roblox uses). I eventually
+                <br>
+                Became to really enjoy programming and decided to try
+                <br>
+                and take things further, I downloaded an app and started
+                <br>
+                my journey learning different programming languages
+                <br>
+                such as: Python, JavaScript, Html, & CSS.
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <span class="tag open-tag fadeIn"><span class="open-tag-open"><</span>projects<span class="open-tag-close">></span> </span>
+            <div class="project deactive">
+                <div class="face face1">
+                    <div class="face-content">
+                        <img src="images/eCommerceSite.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="face-content">
+                        <span class="face2-name">Working eCommerce Prototype</span>
+                        <span class="face2-desc">A working eCommerce website with Stripe Payments (Click To Go To Site)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-details" id="p1-details">
+                <h1 class="project-name">Working eCommerce Prototype</h1>
+                <span class="project-desc">A working eCommerce website fully equipped with a Home/Browse Page,
+                                        
+                                           a View Item Page Containing an Image magnifier on your mouse for the,
+                                           
+                                           item image, a shopping cart, and last but not least Stripe Payment.
+                </span>
+            </div>
+            <span class="tag close-tag fadeIn"><span class="close-tag-open"><</span>/projects<span class="close-tag-close">></span> </span>
+        </div>
+        <div class="contact fadeIn" id="contact">
+            <span class="tag open-tag fadeIn"><span class="open-tag-open"><</span>contact<span class="open-tag-close">></span> </span>
+            <br><br>
+            <h1 style="display: inline;">Contact Me: </h1>
+            <button class="copy-email" onclick="copy()">thescriptinglegend@gmail.com</button>
+            <br><br>
+            <span class="tag open-tag fadeIn"><span class="open-tag-open"><</span>/contact<span class="open-tag-close">></span> </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
