@@ -160,6 +160,7 @@ body{
     border-radius: 15px;
     z-index: 20;
     margin-top: 2%;
+    min-width: 340px;
 }
 
 .project.active{
@@ -174,9 +175,14 @@ body{
     animation: slamOut 1s ease-in forwards;
 }
 
-.project img{
+.project .face.face1 .face-content{
     width: 100%;
     height: 100%;
+}
+
+.project .face.face1 .face-content img{
+    width: 100%;
+    height: auto;
 }
 
 .tag{
@@ -336,4 +342,61 @@ body{
     bottom: -220%;
     height: 20vh;
     width: 80vw;
+}
+
+@media only screen and (max-width: 980px) {
+    .project-name{
+        font-size: 2em;
+    }
+    
+    .project-desc{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .projects{
+        position: absolute;
+        top: 350%;
+    }
+    .project-details{
+        position: absolute;
+        top: 95%;
+        height: fit-content;
+        width: 88vw;
+    }
+
+    .more{
+        width: 100vw;
+        top: 49%;
+    }
+
+    .learn-more{
+        top: 42%;
+    }
+    @keyframes slideLeft {
+        0%{
+            left: 100%;
+        }
+    
+        100%{
+            left: 0%;
+        }
+    }
+
+    .close-tag{
+        position: absolute;
+        bottom: -70%;
+    }
+
+    .contact{
+        position: absolute;
+        bottom: -470%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .project{
+        min-width: 300px;
+    }
 }
